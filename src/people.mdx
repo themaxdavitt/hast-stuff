@@ -1,0 +1,11 @@
+import { Favicon } from '../components/favicon.jsx';
+
+export const Shit = async () => <>Blah</>;
+export const Person = ({ link, children }) => (
+	<span class='u-category h-card'>
+		<a class='u-url p-name' href={link}>
+			<Favicon link={link} />
+			{children}
+		</a>
+	</span>
+);
